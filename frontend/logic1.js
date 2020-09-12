@@ -62,7 +62,7 @@ d3.json(queryUrl,function(data){
   };
   // Create overlay object to hold our overlay layer
   var overlayMaps = {
-    GasCompanys: gas
+    "Compressor Stations": gas
   };
   // Create our map, giving it the streetmap and Gas Compressor layers to display on load
   var myMap = L.map("map", {
