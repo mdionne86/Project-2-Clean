@@ -9,13 +9,13 @@ for (i = 8; i <= allHeaders.length; i++){
 
   summaries.push(obj)
 }
-
-
+console.log("Underneath is the data")
+console.log(dataobject)
 
 var hotElement = document.querySelector('#hot');
 var hotElementContainer = hotElement.parentNode;
 var hotSettings = {
-  data: dataObject,
+  data: dataobject,
   minSpareRows: 2,
   stretchH: 'all',
   width: 805,
