@@ -10,7 +10,7 @@ function createFeatures(gasData) {
   // Define a function we want to run once for each feature in the features array
   // Give each feature a popup describing the place and time of the Gas Compressor
   function onEachFeature(feature, layer) {
-    layer.bindPopup("<h3>" + feature.properties.NAME +
+    layer.bindPopup("<h3>" + feature.properties.NAME + " <hr> "+ feature.properties.PIPECO +
   "</h3><hr><p>"+ feature.properties.CITY+" , "  + feature.properties.STATE +
   " , " +feature.properties.ZIP+ "</p>");
   }
@@ -62,7 +62,7 @@ d3.json(queryUrl,function(data){
   };
   // Create overlay object to hold our overlay layer
   var overlayMaps = {
-    GasCompanys: gas
+    "Compressor Stations": gas
   };
   // Create our map, giving it the streetmap and Gas Compressor layers to display on load
   var myMap = L.map("map", {
